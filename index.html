@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playz</title>
+    <link rel="shortcut icon" href="../img/nav/logo.png" type="image/x-icon">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <!-- LOGO DE LA EMPRESA -->
+        <div class="logo">
+            <a href="index.html"><img src="./img/nav/logo.png" alt="Logo" class="imgLogo"></a>
+            </div>
+        <div class="contenedorBarra">
+            <!-- BARRA DE BUSQUEDA -->
+            <input class="barra" type="text" placeholder="Buscar">
+            <input class="botonBusqueda" type="button" value="Buscar">
+            </div>  
+        <div class="contenedorNav">
+                <ul class="listaAccesos navbar-nav">
+                <!-- LISTA DE ACCESOS -->
+                    <li class="nav-item"><a href="pages/favoritos.html"><img class="navLogo" src="./img/nav/heart-solid-24.png" alt="favorito"></a></li>
+                    <li class="nav-item"><a href="pages/carrito.html"><img class="navLogo" src="./img/nav/cart-solid-24.png" alt="carrito"></a></li>
+                    <li class="nav-item"><a href="pages/usuario.html"><img class="navLogo" src="./img/nav/user-solid-24.png" alt="user"></a></li>
+                    <li class="nav-item"><a href="pages/ayuda.html"><img class="navLogo" src="./img/nav/help-circle-solid-24.png" alt="ayuda"></a></li>
+                    <li class="nav-item"><a href=""><img class="navLogo2" src="./img/nav/grid-horizontal-regular-24.png" alt="grid"></a></li>
+                 </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="pb-2 container-fluid carusel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/promo-uno.jpg" class="d-block w-100 promocional" alt="Minecraft promo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/promo-dos.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/promo-tres.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center containerJuegos">
+            <div class="gap-2"></div>
+            <h1 class="titulos"><span class="subtitulo">JUEGOS</span> DESTACADOS</h1>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/FIFA 22.jpg" alt="FIFA 22"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/GOW.jpg" alt="GOD OF WAR"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/RE8.jpg" alt="RESIDENT EVIL 8"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/Spider-Man.jpg" alt="SPIDIER-MAN"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+                <div class="col-3 container-fluid text-juego">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+                <div class="col-3 container-fluid text-juego">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+                <div class="col-3 container-fluid text-juego">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center containerJuegos">
+            <div class="gap-3"></div>
+            <h2 class="titulos"><span class="subtitulo">OFERTAS</span> ESPECIALES</h2>
+            <div class="gap"></div>
+            <div class="row">
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/GTA V.jpeg" alt="FIFA 22"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/RE4.jpg" alt="GOD OF WAR"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/Spider-Man_Miles-Morales.jpg" alt="RESIDENT EVIL 8"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid imgSize">
+                    <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/UNCHARTED 4.jpeg" alt="SPIDIER-MAN"></a>
+                    <button class="btn-juegos">Agregar al carrito</button>
+                </div>
+                <div class="col-3 container-fluid">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+                <div class="col-3 container-fluid text-juego">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+                <div class="col-3 container-fluid text-juego">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+                <div class="col-3 container-fluid text-juego">
+                    <div class="row">
+                        <div class="gap"></div>
+                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                        <span class="text-name">NOMBRE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="gap-3"></div>
+        <div class="promocional">
+            <img class="" src="./img/promo-cuatro.jpg" alt="playstation plus">
+        </div> -->
+        <div class="container"></div>
+    </main>
+    <div class="container-fluid publi">
+
+    </div>
+    <aside>PUBLICIDAD</aside>
+
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <img class="imgLogo" src="./img/nav/logo.png" alt="logo">
+        <h4>Todos los derechos reservados</h4>
+            <ul class="lista-footer">
+                <li><a href="ayuda.html"><img src="./img/main/footer/envelope-regular-24.png" alt="icono de correo"></li></a>
+                <li><a href="ayuda.html"><img src="./img/main/footer/phone-solid-24.png" alt="icono de telefono"></li></a>
+                <li><a href="https://instagram.com/ledesma_manu_" target="_blank"><img src="./img/main/footer/instagram-logo-24.png" alt="logo de instagram"></a></li>
+                <li><a href="https://twitter.com/ledesma_manu_" target="_blank"><img src="./img/main/footer/twitter-logo-24.png" alt="logo twitter"></a></li>
+            </ul>
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
