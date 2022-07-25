@@ -121,8 +121,7 @@ body{
     font-weight: bold;
 }
 .btn-juegos{
-    position: relative;
-    bottom: 55%;
+    transform: translate(0, -170px);
     background-color: #3A6EA5;
     border: 2px solid #3A6EA5;
     border-radius: 15px;
