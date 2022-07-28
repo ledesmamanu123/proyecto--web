@@ -12,6 +12,9 @@
     font-size: 2.5rem;
     font-family: 'League Spartan', sans-serif;
 }
+.subtitulo-help{
+    font-size: 1.5rem;
+}
 .subtitulo-uno{
     padding-left: 20px;
 }
@@ -42,7 +45,7 @@ nav{
 }
 
 .nav-item{
-    padding: 20px;
+    padding: 15px;
 }
 .navLogo{
     fill: white;
@@ -331,6 +334,19 @@ body{
     margin-right: 30px;
 }
 
+/* PAGINA AYUDA */
+.icon-help-local{
+    fill: black;
+    height: 1em;
+    width: 1em;
+}
+.titulo-card-help-local{
+    color: white;
+    font-size: 1.9rem;
+}
+.text-help-local{
+    color: rgb(224, 223, 223);
+}
 /* FOOTER */
 footer{
     background-color: #3A6EA5;
