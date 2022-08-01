@@ -38,7 +38,24 @@ nav{
     justify-content: space-between;
     height: 104px;
 }
+/* MENU HAMBURGESA */
+.menu-burger-local{
+    background-color: #1c3550;
+    color: white;
+    text-align: start;
+}
+.title-menu-burger{
+    font-size: 1.6rem;
+}
+.menu-slide-local{
+    display: none;
+}
+.navLogo-burger{
+    fill: white;
+    margin-right: 20px;
+}
 
+/* NAV */
 .listaAccesos{
     display: flex;
     flex-direction: row;
@@ -71,30 +88,41 @@ nav{
 .contenedorBarra{
     display: flex;
     height: 50px;
+    width: 30%;
 }
 
 .barra{
     border: 0;
     padding: 0px 10px;
-    width: 400px;
+    width: 100%;
     border-top-left-radius: 10px ;
 }
-
-.botonBusqueda{
-    border: 0;
-    width: 75px;
+.div-busqueda{
+    display: flex;
+    text-align: center;
+    height: auto;
+}
+.btn-busqueda{
+    border: none;
+    height: auto;
+    width: 100%;
+    padding: 10px 15px 15px 15px;
     border-bottom-right-radius: 10px ;
-    background-color: rgb(172, 172, 172);
-    color: white;
+    background-color: rgb(46, 46, 46);
+    fill: white;
     font-size: 1rem;
 }
-
-.botonBusqueda:hover{
+.btn-busqueda:hover .svg-busqueda{
     transition: all 0.5s;
-    background-color: #95beeb;
-    color: black;
-}
+    transform: scale(1.1);
 
+}
+.container-search-bar-local{
+    height: 50px;
+    width: 330px;
+    display: none;
+}
+/* CARRUSEL */
 .promocional{
     width: 100%;
 }
@@ -128,6 +156,10 @@ body{
     width: 200px;
 }
 /* JUEGOS DESTACADOS */
+
+.container-text-juegos-fluid{
+    display: none;
+}
 .decorate-titulos{
     display: flex;
 }
@@ -147,7 +179,7 @@ body{
 
 }
 .imgSize{
-    height: 294px;
+    height: auto;
     width: 294px;
     border-bottom-right-radius: 20px ;
     border-top-left-radius: 20px ;
@@ -268,7 +300,7 @@ body{
 
 /* PAGINA USUARIO */
 .caja-user{
-    width: 30%;
+    width: 50%;
     background-color: #76b1f0;
     padding: 50px;
     margin-bottom: 13%;
@@ -363,4 +395,46 @@ footer{
 .icon-footer-local{
     fill: white;
 
+}
+
+/* MEDIAS QUERIES */
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .menu-slide-local{
+        display: inline-block;
+    }   
+    .listaAccesos{
+        display: none;
+    }
+    .fondo-container-local{
+        left: 48%;
+        bottom: 10%;
+        right: 11%;
+        font-size: 0.9rem;
+    }
+    .form-check{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+/* 992px */
+@media (max-width:992px){
+    .item-carousel-local{
+        width: auto;
+        height: 150%;
+        overflow: hidden;
+    }
+    .container-search-bar-local{
+        display: flex;
+    }
+    .contenedorBarra{
+        display: none;
+    }
+    #myCarousel{
+        display: none;
+    }
 }

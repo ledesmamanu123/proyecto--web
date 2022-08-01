@@ -15,29 +15,65 @@
 </head>
 <body>
     <header>
-        <nav>
-        <!-- LOGO DE LA EMPRESA -->
-        <div class="ps-3 logo">
-            <a href="index.html"><img src="./img/logo/logo-z-completo-blanco.svg" alt="Logo" class="imgLogo"></a>
+        <nav class="navbar navbar-dark">
+          <!-- LOGO DE LA EMPRESA -->
+            <div class="ps-3 logo">
+                <a href="index.html"><img src="./img/logo/logo-z-completo-blanco.svg" alt="Logo" class="imgLogo"></a>
             </div>
-        <div class="contenedorBarra">
-            <!-- BARRA DE BUSQUEDA -->
-            <input class="barra" type="text" placeholder="Buscar">
-            <input class="botonBusqueda" type="button" value="Buscar">
+              <!-- BARRA DE BUSQUEDA -->
+            <div class="contenedorBarra">
+                  <input class="barra" type="text" placeholder="Buscar">
+                  <div class="div-busqueda">
+                    <button class="btn-busqueda"><svg class="svg-busqueda" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></button>
+                  </div>
             </div>  
-        <div class="contenedorNav">
-                <ul class="listaAccesos navbar-nav">
-                <!-- LISTA DE ACCESOS -->
-                    <li class="nav-item"><a href="pages/favoritos.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg></a></li>
-                    <li class="nav-item"><a href="pages/carrito.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg></a></li>
-                    <li class="nav-item"><a href="pages/usuario.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg></a></li>
-                    <li class="nav-item"><a href="pages/ayuda.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 16h-2v-2h2v2zm.976-4.885c-.196.158-.385.309-.535.459-.408.407-.44.777-.441.793v.133h-2v-.167c0-.118.029-1.177 1.026-2.174.195-.195.437-.393.691-.599.734-.595 1.216-1.029 1.216-1.627a1.934 1.934 0 0 0-3.867.001h-2C8.066 7.765 9.831 6 12 6s3.934 1.765 3.934 3.934c0 1.597-1.179 2.55-1.958 3.181z"></path></svg></a></li>
-                    <li class="nav-item"><a href=""><img class="navLogo2" src="./img/nav/grid-horizontal-regular-24.png" alt="grid"></a></li>
-                 </ul>
-            </div>
+          <div class="contenedorNav">
+                  <ul class="listaAccesos navbar-nav">
+                  <!-- LISTA DE ACCESOS -->
+                      <li class="nav-item"><a href="pages/favoritos.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg></a></li>
+                      <li class="nav-item"><a href="pages/carrito.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg></a></li>
+                      <li class="nav-item"><a href="pages/usuario.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg></a></li>
+                      <li class="nav-item"><a href="pages/ayuda.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 16h-2v-2h2v2zm.976-4.885c-.196.158-.385.309-.535.459-.408.407-.44.777-.441.793v.133h-2v-.167c0-.118.029-1.177 1.026-2.174.195-.195.437-.393.691-.599.734-.595 1.216-1.029 1.216-1.627a1.934 1.934 0 0 0-3.867.001h-2C8.066 7.765 9.831 6 12 6s3.934 1.765 3.934 3.934c0 1.597-1.179 2.55-1.958 3.181z"></path></svg></a></li>
+                  </ul>
+                  <!-- MENU HAMBURGUESA -->
+                  <div class="container-fluid menu-slide-local">
+                    <button class="navbar-toggler nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end menu-burger-local" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                      <div class="offcanvas-header">
+                        <span class="offcanvas-title title-menu-burger" id="offcanvasDarkNavbarLabel">Páginas</span>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/favoritos.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg>Favoritos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/carrito.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>Carrito</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/usuario.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>Usuario</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/ayuda.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 16h-2v-2h2v2zm.976-4.885c-.196.158-.385.309-.535.459-.408.407-.44.777-.441.793v.133h-2v-.167c0-.118.029-1.177 1.026-2.174.195-.195.437-.393.691-.599.734-.595 1.216-1.029 1.216-1.627a1.934 1.934 0 0 0-3.867.001h-2C8.066 7.765 9.831 6 12 6s3.934 1.765 3.934 3.934c0 1.597-1.179 2.55-1.958 3.181z"></path></svg>Ayuda</a>
+                          </li>
+                        </ul>
+                        <div class="container-search-bar-local">
+                          <input class="barra" type="text" placeholder="Buscar">
+                          <div class="div-busqueda">
+                            <button class="btn-busqueda"><svg class="svg-busqueda" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></button>
+                          </div>
+                    </div>  
+                      </div>
+                    </div>
+                  </div>
+          </div>   
         </nav>
     </header>
     <main>
+      <!-- CARRUSEL -->
         <div id="myCarousel" class="carousel slide border-top border-bottom border-4 border-dark" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -46,17 +82,17 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./img/promo-fifa23.jpg" class="item-carousel-local" alt="Minecraft">
+                <img src="./img/promo-fifa23.jpg" class="item-carousel-local" alt="FIFA 23">
                 <div class="container">
                   <div class="ps-5 pe-5 carousel-caption text-start fondo-container-local">
-                    <h1>Descuentos para nuevos clientes</h1>
-                    <p>Si eres nuevo, o todavía no creaste tu cuenta, hacelo ahora y llevate un 10% de descuento en tu primer juego.</p>
-                    <p><a class="btn btn-dark btn-lg" href="./pages/usuario.html">Registrate aquí</a></p>
+                    <h1>Descuentos en preventas</h1>
+                    <p>Si estas deseando jugar desde el día uno, aprovecha y consiguelo con un 10% de descuento.</p>
+                    <p><a class="btn btn-dark btn-lg" href="./pages/usuario.html">Canjealo aquí</a></p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./img/promo-re4.jpg" class="item-carousel-local" alt="Fall Guys">
+                <img src="./img/promo-re4.jpg" class="item-carousel-local" alt="Resident Evil 4 Remake">
                 <div class="container">
                   <div class="carousel-caption fondo-container-local">
                     <h2>RESIDENT EVIL 4 REMAKE</h2>
@@ -66,7 +102,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./img/promo-stray.jpg" class="item-carousel-local" alt="Among Us">
+                <img src="./img/promo-stray.jpg" class="item-carousel-local" alt="Stray">
                 <div class="container">
                   <div class="pe-4 carousel-caption text-end fondo-container-local">
                     <h2>El mejor juego de gatos</h2>
@@ -85,105 +121,91 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <!-- JUEGO DESTACADOS -->
         <div class="container text-center containerJuegos">
-            <div class="gap-2"></div>
-            <h1 data-aos="zoom-in-down" class="titulos decorate-titulos"><span class="subtitulo-uno">JUEGOS</span><span class="subtitulo-dos"> DESTACADOS</span></h1>
-            <div class="gap"></div>
-            <div class="row pe-4" data-aos="fade-up">
-                <div class="col-3 container-fluid imgSize">
+<!-- gap --><div class="gap-2"></div>
+            <h1 class="titulos decorate-titulos"><span class="subtitulo-uno">JUEGOS</span><span class="subtitulo-dos"> DESTACADOS</span></h1>
+<!-- gap --><div class="gap"></div>
+            <div class="row pe-4 container-fluid" data-aos="fade-up">
+                <div class="col-xxl-3 col-md-6 container">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/FIFA 22.jpg" alt="FIFA 22"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
+                      <div class="row">
+                          <div class="gap"></div>
+                          <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                          <span class="text-name">NOMBRE</span>
+                          <div class="gap"></div>
+                  </div>
                 </div>
-                <div class="col-3 container-fluid imgSize">
+                <div class="col-xxl-3 col-md-6 container">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/GOW.jpg" alt="GOD OF WAR"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
+                      <div class="row">
+                          <div class="gap"></div>
+                          <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                          <span class="text-name">NOMBRE</span>
+                          <div class="gap"></div>
+                      </div>
                 </div>
-                <div class="col-3 container-fluid imgSize">
+                <div class="col-xxl-3 col-md-6 container">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/RE8.jpg" alt="RESIDENT EVIL 8"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
+                      <div class="row">
+                          <div class="gap"></div>
+                          <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                          <span class="text-name">NOMBRE</span>
+                          <div class="gap"></div>
+                      </div>
                 </div>
-                <div class="col-3 container-fluid imgSize">
+                <div class="col-xxl-3 col-md-6 container">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/Spider-Man.jpg" alt="SPIDIER-MAN"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
-                </div>
-                <div class="col-3 container-fluid">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
-                </div>
-                <div class="col-3 container-fluid text-juego">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
-                </div>
-                <div class="col-3 container-fluid text-juego">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
-                </div>
-                <div class="col-3 container-fluid text-juego">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
+                      <div class="row">
+                          <div class="gap"></div>
+                          <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                          <span class="text-name">NOMBRE</span>
+                          <div class="gap"></div>
+                      </div>
                 </div>
             </div>
         </div>
+        <!-- OFERTAS ESPECIALES -->
         <div class="container text-center containerJuegos">
-            <div class="gap-3"></div>
-            <h2 class="titulos decorate-titulos" data-aos="zoom-in-down"><span class="subtitulo-uno">OFERTAS</span><span class="subtitulo-dos"> ESPECIALES</span></h2>
-            <div class="gap"></div>
-            <div class="row pe-4" data-aos="fade-up">
-                <div class="col-3 container-fluid imgSize">
+<!-- gap --><div class="gap-3"></div>
+            <h2 class="titulos decorate-titulos"><span class="subtitulo-uno">OFERTAS</span><span class="subtitulo-dos"> ESPECIALES</span></h2>
+<!-- gap --><div class="gap"></div>
+            <div class="row pe-4 container-fluid" data-aos="fade-up">
+                <div class="col-xxl-3 col-md-6 container-fluid">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/GTA V.jpeg" alt="FIFA 22"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
+                    <div class="row">
+          <!-- gap --><div class="gap"></div>
+                      <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                      <span class="text-name">NOMBRE</span>
+                      <div class="gap"></div>
+                  </div>
                 </div>
-                <div class="col-3 container-fluid imgSize">
+                <div class="col-xxl-3 col-md-6 container-fluid">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/RE4.jpg" alt="GOD OF WAR"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
+                    <div class="row">
+          <!-- gap --><div class="gap"></div>
+                      <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                      <span class="text-name">NOMBRE</span>
+                      <div class="gap"></div>
+                  </div>
                 </div>
-                <div class="col-3 container-fluid imgSize">
+                <div class="col-xxl-3 col-md-6 container-fluid">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/Spider-Man_Miles-Morales.jpg" alt="RESIDENT EVIL 8"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
+                    <div class="row">
+          <!-- gap --><div class="gap"></div>
+                      <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                      <span class="text-name">NOMBRE</span>
+                      <div class="gap"></div>
+                  </div>
                 </div>
-                <div class="col-3 container-fluid imgSize">
+                <div class="col-xxl-3 col-md-6 container-fluid">
                     <a href="#"><img class="imgSize imgSizeFilter" src="./img/caratulas/UNCHARTED 4.jpeg" alt="SPIDIER-MAN"></a>
-                    <button class="btn-juegos">Agregar al carrito</button>
-                </div>
-                <div class="col-3 container-fluid">
                     <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
-                </div>
-                <div class="col-3 container-fluid text-juego">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
-                </div>
-                <div class="col-3 container-fluid text-juego">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
-                </div>
-                <div class="col-3 container-fluid text-juego">
-                    <div class="row">
-                        <div class="gap"></div>
-                        <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
-                        <span class="text-name">NOMBRE</span>
-                    </div>
+          <!-- gap --><div class="gap"></div>
+                      <h2 class="text-sub"><span class="text-precio">PRECIO</span></h2>
+                      <span class="text-name">NOMBRE</span>
+                      <div class="gap"></div>
+                  </div>
                 </div>
             </div>
         </div>
