@@ -1,0 +1,28 @@
+//PARTIALS
+@import "header";
+@import "titulos";
+@import "carousel";
+@import "juegos";
+@import "gap";
+@import "fonts";
+@import "mediasq";
+body{
+    background: linear-gradient(to bottom, #00a7e1, #3a6ea5);
+}
+footer{
+    background-color: #3A6EA5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-size: 1.3rem;
+    color: white;
+    
+    .imgLogo-footer{
+        width: 10rem;
+    }
+    .icon-footer-local{
+        fill: white;
+    
+    }    
+}
