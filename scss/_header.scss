@@ -3,53 +3,81 @@ header{
     position: sticky;
     top: 0;
     z-index: 2;
-    nav{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 104px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 104px;
 
-        .imgLogo{
-            width: 10rem;
-            &:hover{
-                transform: rotate(-0.7deg) scale(1.1);
-                transition: 0.6s;
-            }
+    .imgLogo{
+        width: 10rem;
+        &:hover{
+            transform: rotate(-0.7deg) scale(1.1);
+            transition: 0.6s;
         }
+    }
+    .imgLogo-mobile{
+        @extend .imgLogo;
+        display: none;
+    }
+}
+.contenedorBarra{
+    display: flex;
+    height: 50px;
+    width: 30%;
 
-        .contenedorBarra{
-            display: flex;
-            height: 50px;
-            width: 30%;
-
-            .barra{
-                border: 0;
-                padding: 0 10px;
-                width: 100%;
-                border-top-left-radius: 10px;
-            }
-            .div-busqueda{
-                display: flex;
-                text-align: center;
-                height: auto;
-                .btn-busqueda{
-                    border: none;
-                    height: auto;
-                    width: 100%;
-                    padding: 10px 15px 15px 15px;
-                    border-bottom-right-radius: 10px ;
-                    background-color: rgb(46, 46, 46);
-                    fill: white;
-                    font-size: 1rem;
-                    &:hover .svg-busqueda{
-                        transition: all 0.5s;
-                        transform: scale(1.1);
-                    }
-                }
+    .barra{
+        border: 0;
+        padding: 0 10px;
+        width: 100%;
+        border-top-left-radius: 10px;
+    }
+    .div-busqueda{
+        display: flex;
+        text-align: center;
+        height: auto;
+        .btn-busqueda{
+            border: none;
+            height: auto;
+            width: 100%;
+            padding: 10px 15px 15px 15px;
+            border-bottom-right-radius: 10px ;
+            background-color: rgb(46, 46, 46);
+            fill: white;
+            font-size: 1rem;
+            &:hover .svg-busqueda{
+                transition: all 0.5s;
+                transform: scale(1.1);
             }
         }
     }
+}
+//BOTON SESION MOBILE
+.btn-sesion-mobile{
+    display: none;
+    border: 1px solid #1c3550;
+    border-radius:5px;
+    background-color: #1c3550;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+//BOTON BUSQUEDA MOBILE
+.btn-busqueda-mobile{
+    display: none;
+    border: none;
+    // width: 20%;
+    padding: 10px 15px 15px 15px;
+    border-bottom-right-radius: 10px ;
+    // background-color: rgb(46, 46, 46);
+    background: none;
+    fill: white;
+    font-size: 1rem;
+    
 }
 .listaAccesos{
     display: flex;
@@ -68,9 +96,20 @@ header{
         }
     }
 }
+
+//MENU HAMBURGUESA
 .menu-slide-local{
     display: none;
-
+    .btn-burger{
+        border: none;
+        padding: 0;
+        margin-right: 10px;
+        svg{
+            fill: white;
+            width: 24px; 
+            height: 24px;
+        }
+    }
     .menu-burger-local{
         background-color: #1c3550;
     }
@@ -79,4 +118,29 @@ header{
     height: 50px;
     width: 330px;
     display: none;
+    .barra{
+        border: 0;
+        padding: 0 10px;
+        width: 100%;
+        border-top-left-radius: 10px;
+    }
+    .div-busqueda{
+        display: flex;
+        text-align: center;
+        height: auto;
+        .btn-busqueda{
+            border: none;
+            height: auto;
+            width: 100%;
+            padding: 10px 15px 15px 15px;
+            border-bottom-right-radius: 10px ;
+            background-color: rgb(46, 46, 46);
+            fill: white;
+            font-size: 1rem;
+            &:hover .svg-busqueda{
+                transition: all 0.5s;
+                transform: scale(1.1);
+            }
+        }
+    }
 }

@@ -35,6 +35,9 @@
     .contenedorBarra{
         display: none;
     }
+    .btn-busqueda-mobile{
+        display: inline-block;
+    }
     #myCarousel{
         display: none;
     }
@@ -63,4 +66,39 @@
         flex: 100;
     
     }
+}
+
+@media (max-width: 576px){
+
+    nav{
+        .btn-sesion-mobile{
+            display: inline-block;
+        }
+        .logo{
+            display: none;
+        }
+        padding: 0;
+        justify-content: space-around;
+        .imgLogo{
+            display: none;
+            // margin-right: 10px;
+        }
+        .imgLogo-mobile{
+            display: inline-block;
+            width: 3rem;
+        }
+        .contenedorNav{
+            div{
+                padding: 0;
+            }
+        }
+    }
+    .decorate-titulos::before{
+        flex: 60px;
+    }
+    .imgSize{
+        height: 147px;
+        width: auto;
+    }
+
 }

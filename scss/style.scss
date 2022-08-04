@@ -2,13 +2,35 @@
 @import "header";
 @import "titulos";
 @import "carousel";
-@import "juegos";
 @import "gap";
 @import "fonts";
-@import "mediasq";
 body{
     background: linear-gradient(to bottom, #00a7e1, #3a6ea5);
 }
+.imgSize{
+    height: 294px;
+    width: auto;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+    &:hover{
+        transition: all 0.2s;
+        filter:blur(2px);
+    }
+}
+.text-sub{
+    padding-right: 4px;
+    font-size: 1rem;
+    color: white;
+    .text-precio{
+        background-color: #292929;
+        padding:  6px 6px 6px 6px;
+    }
+}
+.text-name{
+    padding-right: 4px;
+    font-weight: bold;
+}
+
 footer{
     background-color: #3A6EA5;
     display: flex;
@@ -26,3 +48,4 @@ footer{
     
     }    
 }
+@import "mediasq";
