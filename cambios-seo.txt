@@ -1,0 +1,2 @@
+Cambios en las etiquetas title de todas páginas.
+Agregué meta description y keywords a todas las páginas.
