@@ -196,7 +196,7 @@ body {
   font-weight: bold; }
 
 footer {
-  background-color: #3A6EA5;
+  background-color: #292929;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -207,6 +207,18 @@ footer {
     width: 10rem; }
   footer .icon-footer-local {
     fill: white; }
+
+.social-twitter:hover {
+  fill: #00acee;
+  transition: all 0.5s; }
+
+.social-instagram:hover {
+  fill: #C13584;
+  transition: all 0.5s; }
+
+.social-facebook:hover {
+  fill: #4267B2;
+  transition: all 0.5s; }
 
 /* MEDIAS QUERIES */
 /* 1200px */
