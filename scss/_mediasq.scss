@@ -1,7 +1,16 @@
 /* MEDIAS QUERIES */
-
+@media (max-width:1440px){
+    .btn-juegos{
+        right: 38%;
+    }
+}
 /* 1200px */
 @media (max-width: 1200px) {
+    .filtro-juegos{
+        &:hover .btn-juegos{
+            display: none;
+        }
+    }
     .menu-slide-local{
         display: inline-block;
     }   
@@ -41,12 +50,26 @@
     #myCarousel{
         display: none;
     }
+    .btn-publi{
+        right: 20%;
+        top: 35%;
+        width: 200px;
+        height: 58px;
+        font-size: 1rem;
+    }
 }
 
 /* 768px */
 @media (max-width:768px){
+    .imgSize{
+        height: 168px;
+        padding-top: 10px;
+    }
+    .caja-precio-juegos{
+        display: none;
+    }
     .titulos{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .subtitulo-help{
         font-size: 1rem;
@@ -66,6 +89,22 @@
         flex: 100;
     
     }
+    .img-publi{
+        display: none;
+    }
+    .img-publi-mobile{
+        display: inline-block;
+    }
+    .btn-publi{
+        right: 34%;
+        top: 63%;
+        width: 291px;
+        height: 98px;
+        font-size: 1.5rem;
+    }
+    .caja-recomendados-cart{
+        display: none!important;
+    }
 }
 
 @media (max-width: 576px){
@@ -77,15 +116,11 @@
         .logo{
             display: none;
         }
-        padding: 0;
-        justify-content: space-around;
-        .imgLogo{
-            display: none;
-            // margin-right: 10px;
+        .ancla-logo-mobile{
+            display: inline-block;
         }
         .imgLogo-mobile{
-            display: inline-block;
-            width: 3rem;
+            width: 4.5rem;
         }
         .contenedorNav{
             div{
@@ -99,6 +134,9 @@
     .imgSize{
         height: 147px;
         width: auto;
+    }
+    .btn-publi{
+        right: 27%;
     }
 
 }

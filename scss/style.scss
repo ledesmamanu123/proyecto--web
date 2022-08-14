@@ -1,52 +1,16 @@
-//PARTIALS
-@import "header";
-@import "titulos";
-@import "carousel";
-@import "gap";
-@import "fonts";
-body{
-    background: linear-gradient(to bottom, #00a7e1, #3a6ea5);
-}
-.imgSize{
-    height: 294px;
-    width: auto;
-    border-bottom-right-radius: 20px ;
-    border-top-left-radius: 20px ;
-    &:hover{
-        transition: all 0.2s;
-        filter:blur(2px);
-    }
-}
-.text-sub{
-    padding-right: 4px;
-    font-size: 1rem;
-    color: white;
-    .text-precio{
-        background-color: #292929;
-        padding:  6px 6px 6px 6px;
-    }
-}
-.text-name{
-    padding-right: 4px;
-    font-weight: bold;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
-footer{
-    background-color: #292929;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    font-size: 1.3rem;
-    color: white;
-    
-    .imgLogo-footer{
-        width: 10rem;
-    }
-    .icon-footer-local{
-        fill: white;
-    
-    }    
-}
+//PARTIALS
+@import "titulos";
+@import "gap";
+@import "fonts";
+@import "header";
+@import "main";
+@import "footer";
 @import "maps";
 @import "mediasq";

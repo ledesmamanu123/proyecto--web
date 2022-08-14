@@ -1,0 +1,17 @@
+footer{
+    background-color: #292929;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-size: 1.3rem;
+    color: white;
+    
+    .imgLogo-footer{
+        width: 10rem;
+    }
+    .icon-footer-local{
+        fill: white;
+    
+    }    
+}

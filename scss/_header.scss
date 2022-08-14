@@ -18,10 +18,12 @@ nav{
             transition: 0.6s;
         }
     }
-    .imgLogo-mobile{
-        @extend .imgLogo;
+    .ancla-logo-mobile{
         display: none;
     }
+}
+.imgLogo-mobile{
+    @extend .imgLogo;
 }
 .contenedorBarra{
     display: flex;
@@ -100,6 +102,13 @@ nav{
 //MENU HAMBURGUESA
 .menu-slide-local{
     display: none;
+    .title-menu-burger{
+        color: white;
+        font-size: 1.9rem;
+    }
+    .nav-item{
+        color: white;
+    }
     .btn-burger{
         border: none;
         padding: 0;

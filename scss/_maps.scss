@@ -9,4 +9,7 @@ $social-media:(
         fill: $value-media;
         transition: all 0.5s;
     }
+    .social-#{$name-media}:hover svg{
+        transform: scale(1.1);
+    }
 }

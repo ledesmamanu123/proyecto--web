@@ -1,5 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+.titulos {
+  font-size: 2.5rem;
+  font-family: 'League Spartan', sans-serif; }
+
+.subtitulo-help {
+  font-size: 1.5rem; }
+
+.subtitulo-uno {
+  padding-left: 20px; }
+
+.subtitulo-dos {
+  padding-right: 20px;
+  color: white;
+  padding-left: 10px; }
+
+/* DECORACION TITULOS */
+.decorate-titulos {
+  display: flex; }
+
+.decorate-titulos::before, .decorate-titulos::after {
+  content: "";
+  display: block;
+  border-bottom: 8px solid;
+  transform: translateY(-26px); }
+
+.decorate-titulos::before {
+  flex: 20px;
+  width: 20px;
+  min-width: 20px; }
+
+.decorate-titulos::after {
+  flex: 100; }
+
+.gap {
+  height: 30px; }
+
+.gap-2 {
+  height: 60px; }
+
+.gap-3 {
+  height: 90px; }
+
 header {
   background-color: rgba(58, 110, 165, 0.6);
   position: sticky;
@@ -17,7 +65,7 @@ nav {
     nav .imgLogo:hover, nav .imgLogo-mobile:hover {
       transform: rotate(-0.7deg) scale(1.1);
       transition: 0.6s; }
-  nav .imgLogo-mobile {
+  nav .ancla-logo-mobile {
     display: none; }
 
 .contenedorBarra {
@@ -78,6 +126,11 @@ nav {
 
 .menu-slide-local {
   display: none; }
+  .menu-slide-local .title-menu-burger {
+    color: white;
+    font-size: 1.9rem; }
+  .menu-slide-local .nav-item {
+    color: white; }
   .menu-slide-local .btn-burger {
     border: none;
     padding: 0;
@@ -115,73 +168,34 @@ nav {
         transition: all 0.5s;
         transform: scale(1.1); }
 
-.titulos {
-  font-size: 2.5rem;
-  font-family: 'League Spartan', sans-serif; }
-
-.subtitulo-help {
-  font-size: 1.5rem; }
-
-.subtitulo-uno {
-  padding-left: 20px; }
-
-.subtitulo-dos {
-  padding-right: 20px;
-  color: white;
-  padding-left: 10px; }
-
-/* DECORACION TITULOS */
-.decorate-titulos {
-  display: flex; }
-
-.decorate-titulos::before, .decorate-titulos::after {
-  content: "";
-  display: block;
-  border-bottom: 8px solid;
-  transform: translateY(-26px); }
-
-.decorate-titulos::before {
-  flex: 20px;
-  width: 20px;
-  min-width: 20px; }
-
-.decorate-titulos::after {
-  flex: 100; }
-
-.item-carousel-local {
-  width: 100%;
-  height: 100%; }
-
-.fondo-container-local {
-  background-color: #292929;
-  border-radius: 15px;
-  left: 50%;
-  bottom: 20%; }
-
-.img-carousel-mobile {
-  height: 147px;
-  width: 100%; }
-
-.gap {
-  height: 30px; }
-
-.gap-2 {
-  height: 60px; }
-
-.gap-3 {
-  height: 90px; }
-
 body {
   background: linear-gradient(to bottom, #00a7e1, #3a6ea5); }
+
+.btn-juegos {
+  position: absolute;
+  right: 26%;
+  top: -170px;
+  background-color: #2a7db5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.025rem;
+  color: white;
+  display: none; }
 
 .imgSize {
   height: 294px;
   width: auto;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px; }
-  .imgSize:hover {
-    transition: all 0.2s;
-    filter: blur(2px); }
+
+.filtro-juegos:hover .imgSize {
+  transition: all 0.2s;
+  filter: blur(2px); }
+
+.filtro-juegos:hover .btn-juegos {
+  transition: all 0.2s;
+  display: inline-block; }
 
 .text-sub {
   padding-right: 4px;
@@ -194,6 +208,148 @@ body {
 .text-name {
   padding-right: 4px;
   font-weight: bold; }
+
+.item-carousel-local {
+  width: 100%;
+  height: 100%; }
+
+.fondo-container-local {
+  background-color: #292929;
+  border-radius: 15px;
+  left: 50%;
+  bottom: 20%; }
+
+.img-publi {
+  height: auto;
+  width: 100%; }
+
+.container-publi {
+  position: relative; }
+
+.btn-publi {
+  position: absolute;
+  right: 20%;
+  top: 35%;
+  width: 300px;
+  height: 100px;
+  background-color: #2a7db5;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none; }
+  .btn-publi:hover {
+    filter: drop-shadow(0 0 0.4rem #9b9a9a);
+    transition: all 0.5s; }
+
+.img-publi-mobile {
+  width: 100%;
+  display: none; }
+
+.imgSize-fav {
+  width: 100%;
+  height: auto;
+  padding-left: 0; }
+
+.container-fav-local {
+  border: none;
+  padding: 0;
+  margin: 0 40px 80px 40px; }
+
+.title-fav-local {
+  font-size: 1.3rem; }
+
+.old-price-text {
+  text-decoration: line-through;
+  font-size: 1rem; }
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: bolder; }
+
+.card-text-2 {
+  color: #68d468;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.imgSize-cart {
+  height: 152px;
+  width: auto;
+  border-radius: 10px; }
+
+.imgSize-cart-opciones {
+  height: 100%;
+  width: auto;
+  filter: grayscale(0.6); }
+
+.juegos-cart-opciones {
+  height: 120px; }
+
+.juegos-cart-opciones:hover .imgSize-cart-opciones {
+  transition: all 0.5s;
+  filter: none;
+  filter: brightness(100px); }
+
+.juegos-cart-opciones:hover {
+  transition: all 0.5s; }
+
+.juegos-cart {
+  color: white;
+  background-color: #292929;
+  padding: 10px; }
+
+.items-juegos-cart-uno {
+  padding-bottom: 10px; }
+
+.items-juegos-cart-tres {
+  padding-top: 10px; }
+
+.container-opciones-cart {
+  gap: 0; }
+
+.total-price-cart {
+  height: 100px;
+  background-color: #6e6e6e;
+  color: white;
+  font-weight: bold;
+  padding: 10px; }
+
+.btn-cart {
+  margin-right: 30px; }
+
+.caja-user {
+  width: 50%;
+  background-color: #76b1f0;
+  padding: 50px;
+  margin-bottom: 13%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+.form-control {
+  width: 100%;
+  height: 50px; }
+
+.form-label {
+  color: white; }
+
+.form-check-label {
+  color: black; }
+
+.form-text {
+  color: #5e5e5e; }
+
+.icon-help-local {
+  fill: black;
+  height: 1em;
+  width: 1em; }
+
+.titulo-card-help-local {
+  color: white;
+  font-size: 1.9rem; }
+
+.text-help-local {
+  color: #e0dfdf; }
 
 footer {
   background-color: #292929;
@@ -212,17 +368,32 @@ footer {
   fill: #00acee;
   transition: all 0.5s; }
 
+.social-twitter:hover svg {
+  transform: scale(1.1); }
+
 .social-instagram:hover {
   fill: #C13584;
   transition: all 0.5s; }
+
+.social-instagram:hover svg {
+  transform: scale(1.1); }
 
 .social-facebook:hover {
   fill: #4267B2;
   transition: all 0.5s; }
 
+.social-facebook:hover svg {
+  transform: scale(1.1); }
+
 /* MEDIAS QUERIES */
+@media (max-width: 1440px) {
+  .btn-juegos {
+    right: 38%; } }
+
 /* 1200px */
 @media (max-width: 1200px) {
+  .filtro-juegos:hover .btn-juegos {
+    display: none; }
   .menu-slide-local {
     display: inline-block; }
   .listaAccesos {
@@ -251,12 +422,23 @@ footer {
   .btn-busqueda-mobile {
     display: inline-block; }
   #myCarousel {
-    display: none; } }
+    display: none; }
+  .btn-publi {
+    right: 20%;
+    top: 35%;
+    width: 200px;
+    height: 58px;
+    font-size: 1rem; } }
 
 /* 768px */
 @media (max-width: 768px) {
+  .imgSize {
+    height: 168px;
+    padding-top: 10px; }
+  .caja-precio-juegos {
+    display: none; }
   .titulos {
-    font-size: 1.5rem; }
+    font-size: 1.9rem; }
   .subtitulo-help {
     font-size: 1rem; }
   .decorate-titulos::before, .decorate-titulos::after {
@@ -269,25 +451,35 @@ footer {
     width: 20px;
     min-width: 20px; }
   .decorate-titulos::after {
-    flex: 100; } }
+    flex: 100; }
+  .img-publi {
+    display: none; }
+  .img-publi-mobile {
+    display: inline-block; }
+  .btn-publi {
+    right: 34%;
+    top: 63%;
+    width: 291px;
+    height: 98px;
+    font-size: 1.5rem; }
+  .caja-recomendados-cart {
+    display: none !important; } }
 
 @media (max-width: 576px) {
-  nav {
-    padding: 0;
-    justify-content: space-around; }
-    nav .btn-sesion-mobile {
-      display: inline-block; }
-    nav .logo {
-      display: none; }
-    nav .imgLogo, nav .imgLogo-mobile {
-      display: none; }
-    nav .imgLogo-mobile {
-      display: inline-block;
-      width: 3rem; }
-    nav .contenedorNav div {
-      padding: 0; }
+  nav .btn-sesion-mobile {
+    display: inline-block; }
+  nav .logo {
+    display: none; }
+  nav .ancla-logo-mobile {
+    display: inline-block; }
+  nav .imgLogo-mobile {
+    width: 4.5rem; }
+  nav .contenedorNav div {
+    padding: 0; }
   .decorate-titulos::before {
     flex: 60px; }
   .imgSize {
     height: 147px;
-    width: auto; } }
+    width: auto; }
+  .btn-publi {
+    right: 27%; } }

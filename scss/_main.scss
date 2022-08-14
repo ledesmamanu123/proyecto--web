@@ -1,0 +1,204 @@
+//INDEX CONTENT
+body{
+    background: linear-gradient(to bottom, #00a7e1, #3a6ea5);
+}
+//JUEGOS INDEX
+.btn-juegos{
+    position: absolute;
+    right: 26%;
+    top: -170px;
+    background-color: #2a7db5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.025rem;
+    color: white;
+    display: none;
+}
+
+.imgSize{
+    height: 294px;
+    width: auto;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+}
+.filtro-juegos{
+    &:hover .imgSize{
+        transition: all 0.2s;
+        filter:blur(2px);
+    }
+    &:hover .btn-juegos{
+        transition: all 0.2s;
+        display: inline-block;
+    }
+}
+.text-sub{
+    padding-right: 4px;
+    font-size: 1rem;
+    color: white;
+    .text-precio{
+        background-color: #292929;
+        padding:  6px 6px 6px 6px;
+    }
+}
+.text-name{
+    padding-right: 4px;
+    font-weight: bold;
+}
+//CAROUSEL INDEX
+.item-carousel-local{
+    width: 100%;
+    height: 100%;
+}
+.fondo-container-local{
+    background-color: #292929;
+    border-radius: 15px;
+    left: 50%;
+    bottom: 20%;
+}
+
+//PUBLICIDAD INDEX
+.img-publi{
+    height: auto;
+    width: 100%;
+}
+.container-publi{
+    position: relative;
+}
+.btn-publi{
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    width: 300px;
+    height: 100px;
+    background-color: #2a7db5;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        filter: drop-shadow(0 0 0.40rem rgb(155, 154, 154));
+        transition: all 0.5s;
+    }
+}
+.img-publi-mobile{
+    width: 100%;
+    display: none;
+}
+
+//PAGE FAVORITOS
+.imgSize-fav{
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+}
+.container-fav-local{
+    border: none;
+    padding: 0;
+    margin: 0 40px 80px 40px;
+}
+.title-fav-local{
+    font-size: 1.3rem;
+}
+.old-price-text{
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+.card-text{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.card-text-2{
+    color: rgb(104, 212, 104);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+//PAGE CARRITO
+.imgSize-cart{
+    height: 152px;
+    width: auto;
+    border-radius: 10px;
+}
+.imgSize-cart-opciones{
+    height: 100%;
+    width: auto;
+    filter: grayscale(0.6);
+}
+.juegos-cart-opciones{
+    height: 120px;
+}
+.juegos-cart-opciones:hover .imgSize-cart-opciones{
+    transition: all 0.5s;
+    filter: none;
+    filter: brightness(100px);
+}
+.juegos-cart-opciones:hover{
+    transition: all 0.5s;
+}
+.juegos-cart{
+    color: white;
+    background-color: #292929;
+    padding: 10px;
+}
+.items-juegos-cart-uno{
+ padding-bottom: 10px ;
+}
+.items-juegos-cart-tres{
+    padding-top: 10px ;
+}
+.container-opciones-cart{
+    gap: 0;
+}
+.total-price-cart{
+    height: 100px;
+    background-color: #6e6e6e;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.btn-cart{
+    margin-right: 30px;
+}
+
+
+//PAGE USER
+.caja-user{
+    width: 50%;
+    background-color: #76b1f0;
+    padding: 50px;
+    margin-bottom: 13%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-control{
+    width: 100%;
+    height: 50px;
+}
+.form-label{
+    color: white;
+}
+.form-check-label{
+    color: rgb(0, 0, 0);
+}
+.form-text{
+    color: rgb(94, 94, 94);
+}
+
+
+//PAGE HELP
+.icon-help-local{
+    fill: black;
+    height: 1em;
+    width: 1em;
+}
+.titulo-card-help-local{
+    color: white;
+    font-size: 1.9rem;
+}
+.text-help-local{
+    color: rgb(224, 223, 223);
+}
