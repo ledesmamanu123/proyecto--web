@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo/logo-z-(sin-bordes).png" type="image/x-icon">
-    <title>Favoritos</title>
+    <meta name="description" content="Página de usuario. Aplica tu personalidad y gusto en tu foto de perfil, añade reseñas y recomienda juegos a la comunidad.">
+    <title>Playz | Usuario</title>
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo-scss.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-      <nav class="navbar navbar-dark">
+      <nav>
         <!-- LOGO DE LA EMPRESA -->
           <div class="ps-3 logo">
-              <a href="../index.html"><img src="../img/logo/logo-z-completo-blanco.svg" alt="Logo" class="imgLogo"></a>
+              <a href="../index.html"><img src="../img/logo/logo-z-completo-blanco.svg" alt="Logo Playz" class="imgLogo"></a>
           </div>
             <!-- BARRA DE BUSQUEDA -->
           <div class="contenedorBarra">
@@ -27,7 +28,11 @@
                 <div class="div-busqueda">
                   <button class="btn-busqueda"><svg class="svg-busqueda" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></button>
                 </div>
-          </div>  
+          </div>
+          <!-- LOGO-EMPRESA-MOBILE -->
+          <a class="ancla-logo-mobile" href="../index.html"><img src="../img/logo/logo-z-(sin-bordes).png" alt="Logo Playz" class="imgLogo-mobile"></a>
+          <!-- Iniciar Sesión -->
+          <button class="btn-sesion-mobile"><a href="usuario.html">Iniciar sesión</a></button>
         <div class="contenedorNav">
                 <ul class="listaAccesos navbar-nav">
                 <!-- LISTA DE ACCESOS -->
@@ -36,10 +41,13 @@
                     <li class="nav-item"><a href="usuario.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg></a></li>
                     <li class="nav-item"><a href="ayuda.html"><svg class="navLogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 16h-2v-2h2v2zm.976-4.885c-.196.158-.385.309-.535.459-.408.407-.44.777-.441.793v.133h-2v-.167c0-.118.029-1.177 1.026-2.174.195-.195.437-.393.691-.599.734-.595 1.216-1.029 1.216-1.627a1.934 1.934 0 0 0-3.867.001h-2C8.066 7.765 9.831 6 12 6s3.934 1.765 3.934 3.934c0 1.597-1.179 2.55-1.958 3.181z"></path></svg></a></li>
                 </ul>
+
                 <!-- MENU HAMBURGUESA -->
                 <div class="container-fluid menu-slide-local">
-                  <button class="navbar-toggler nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                  <!-- BOTON-SEARCH-MOBILE -->
+                  <button class="btn-busqueda-mobile"><svg class="svg-busqueda" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></button>
+                  <button class="navbar-toggler btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="">
+                    <svg xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
                   </button>
                   <div class="offcanvas offcanvas-end menu-burger-local" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
@@ -49,28 +57,23 @@
                     <div class="offcanvas-body">
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="favoritos.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg>Favoritos</a>
+                          <a class="nav-link active" aria-current="page" href="favoritos.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg> Favoritos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="carrito.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>Carrito</a>
+                          <a class="nav-link active" aria-current="page" href="carrito.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg> Carrito</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="usuario.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>Usuario</a>
+                          <a class="nav-link active" aria-current="page" href="usuario.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg> Usuario</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="ayuda.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 16h-2v-2h2v2zm.976-4.885c-.196.158-.385.309-.535.459-.408.407-.44.777-.441.793v.133h-2v-.167c0-.118.029-1.177 1.026-2.174.195-.195.437-.393.691-.599.734-.595 1.216-1.029 1.216-1.627a1.934 1.934 0 0 0-3.867.001h-2C8.066 7.765 9.831 6 12 6s3.934 1.765 3.934 3.934c0 1.597-1.179 2.55-1.958 3.181z"></path></svg>Ayuda</a>
+                          <a class="nav-link active" aria-current="page" href="ayuda.html"><svg class="navLogo-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 16h-2v-2h2v2zm.976-4.885c-.196.158-.385.309-.535.459-.408.407-.44.777-.441.793v.133h-2v-.167c0-.118.029-1.177 1.026-2.174.195-.195.437-.393.691-.599.734-.595 1.216-1.029 1.216-1.627a1.934 1.934 0 0 0-3.867.001h-2C8.066 7.765 9.831 6 12 6s3.934 1.765 3.934 3.934c0 1.597-1.179 2.55-1.958 3.181z"></path></svg> Ayuda</a>
                         </li>
                       </ul>
-                      <div class="container-search-bar-local">
-                        <input class="barra" type="text" placeholder="Buscar">
-                        <div class="div-busqueda">
-                          <button class="btn-busqueda"><svg class="svg-busqueda" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></button>
-                        </div>
                   </div>  
                     </div>
                   </div>
                 </div>
-        </div>   
+        </div>
       </nav>
     </header>
     <main>
@@ -102,6 +105,7 @@
               </div>
             </form>
           </div>
+          <div class="gap-3"></div>
     </main>
     <!-- PIE DE PÁGINA -->
     <footer class="d-flex flex-wrap  align-items-center">
@@ -113,9 +117,9 @@
         </div>
     
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted icon-footer-local" href="https://twitter.com/ledesma_manu_" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg></a></li>
-          <li class="ms-3"><a class="text-muted icon-footer-local" href="https://www.instagram.com/ledesma_manu_/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg></a></li>
-          <li class="ms-3"><a class="text-muted icon-footer-local" href="https://www.facebook.com/PlayZ-101953328109556" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg></a></li>
+          <li class="ms-3"><a class="text-muted icon-footer-local social-twitter" href="https://twitter.com/ledesma_manu_" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg></a></li>
+          <li class="ms-3"><a class="text-muted icon-footer-local social-instagram" href="https://www.instagram.com/ledesma_manu_/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg></a></li>
+          <li class="ms-3"><a class="text-muted icon-footer-local social-facebook" href="https://www.facebook.com/PlayZ-101953328109556" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg></a></li>
         </ul>
       </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

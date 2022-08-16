@@ -1,0 +1,34 @@
+.titulos{
+    font-size: 2.5rem;
+    font-family: 'League Spartan', sans-serif;
+}
+.subtitulo-help{
+    font-size: 1.5rem;
+}
+.subtitulo-uno{
+    padding-left: 20px;
+}
+.subtitulo-dos{
+    padding-right: 20px;
+    color: white;
+    padding-left: 10px;
+}
+/* DECORACION TITULOS */
+.decorate-titulos{
+    display: flex;
+}
+.decorate-titulos::before, .decorate-titulos::after{
+    content: "";
+    display: block;
+    border-bottom: 8px solid;
+    transform: translateY(-26px);
+}
+.decorate-titulos::before{
+    flex: 20px;
+    width: 20px;
+    min-width: 20px;
+}
+.decorate-titulos::after{
+    flex: 100;
+
+}

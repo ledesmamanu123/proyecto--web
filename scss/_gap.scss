@@ -1,0 +1,21 @@
+
+@mixin gaps($h) {
+    @if $h== gap-1 {
+        height: 30px;
+    } @else if $h== gap-2 {
+        height: 60px;
+    } @else if $h == gap-3 {
+        height: 90px;
+    }
+}
+
+
+.gap{
+    @include gaps(gap-1)
+}
+.gap-2{
+    @include gaps(gap-2)
+}
+.gap-3{
+    @include gaps(gap-3)
+}

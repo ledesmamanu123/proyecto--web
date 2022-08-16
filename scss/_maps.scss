@@ -1,0 +1,15 @@
+$social-media:(
+    twitter : #00acee,
+    instagram: #C13584,
+    facebook: #4267B2
+);
+
+@each $name-media, $value-media in $social-media {
+    .social-#{$name-media}:hover{
+        fill: $value-media;
+        transition: all 0.5s;
+    }
+    .social-#{$name-media}:hover svg{
+        transform: scale(1.1);
+    }
+}
