@@ -105,6 +105,11 @@
     .caja-recomendados-cart{
         display: none!important;
     }
+    .caja-user{
+        width: 80%;
+        padding: 20px;
+        margin-bottom: 20%;
+    }
 }
 
 @media (max-width: 576px){
@@ -137,6 +142,9 @@
     }
     .btn-publi{
         right: 27%;
+    }
+    .caja-user{
+        width: 90%;
     }
 
 }
