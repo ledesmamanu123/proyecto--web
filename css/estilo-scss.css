@@ -169,7 +169,7 @@ nav {
         transform: scale(1.1); }
 
 body {
-  background: linear-gradient(to bottom, #00a7e1, #3a6ea5); }
+  background-color: #3a6ea5; }
 
 .btn-juegos {
   position: absolute;
@@ -246,6 +246,22 @@ body {
 .img-publi-mobile {
   width: 100%;
   display: none; }
+
+.container-redes {
+  height: 450px;
+  width: 100%;
+  background-color: #4787cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container-redes h4 {
+    font-size: 2rem; }
+  .container-redes img {
+    margin: 0 10px; }
+  .container-redes svg {
+    width: 180px;
+    fill: red; }
 
 .imgSize-fav {
   width: 100%;
