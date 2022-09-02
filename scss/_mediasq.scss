@@ -108,7 +108,14 @@
     .caja-user{
         width: 80%;
         padding: 20px;
-        margin-bottom: 20%;
+        margin-bottom: 50%;
+    }
+    //PAGE CARRITO MOBILE
+    .juegos-cart-desktop{
+        display: none!important;
+    }
+    .cart-mobile{
+        display: inline;
     }
 }
 
@@ -133,6 +140,13 @@
             }
         }
     }
+    .container-redes__redes{
+        a{
+            img{
+                width: 7rem;
+            }
+        }
+    }
     .decorate-titulos::before{
         flex: 60px;
     }
@@ -145,6 +159,27 @@
     }
     .caja-user{
         width: 90%;
+    }
+
+}
+
+@media (max-width: 380px){
+    .imgLogo-mobile{
+        width: 2.5rem;
+    }
+    .decorate-titulos::after{
+        display: none;
+    }
+    .decorate-titulos::before{
+        display: none;
+    }
+    .titulos{
+        display: inline-block;
+        font-size: 1.8rem;
+    }
+    .btn-publi{
+        right: 20%;
+        width: 219px;
     }
 
 }

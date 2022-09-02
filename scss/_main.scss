@@ -95,8 +95,9 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    h4{
+    h3{
         font-size: 2rem;
+        text-align: center;
     }
     img{
         margin: 0 10px;
@@ -104,6 +105,12 @@ body{
     svg{
         width: 180px;
         fill: red;
+    }
+    .container-redes__redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -184,6 +191,27 @@ body{
     margin-right: 30px;
 }
 
+.cart-mobile{
+    background-color: #292929;
+    color: white;
+    font-weight: bold;
+    .img-thumbnail{
+        height: 180px;
+        width: auto;
+        background-color: #292929;
+        border: #292929;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        text-align: center;
+    }
+}
+.cart-mobile{
+    display: none;
+}
 
 //PAGE USER
 .caja-user{

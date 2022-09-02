@@ -255,13 +255,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .container-redes h4 {
-    font-size: 2rem; }
+  .container-redes h3 {
+    font-size: 2rem;
+    text-align: center; }
   .container-redes img {
     margin: 0 10px; }
   .container-redes svg {
     width: 180px;
     fill: red; }
+  .container-redes .container-redes__redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 .imgSize-fav {
   width: 100%;
@@ -333,6 +339,25 @@ body {
 
 .btn-cart {
   margin-right: 30px; }
+
+.cart-mobile {
+  background-color: #292929;
+  color: white;
+  font-weight: bold; }
+  .cart-mobile .img-thumbnail {
+    height: 180px;
+    width: auto;
+    background-color: #292929;
+    border: #292929; }
+  .cart-mobile p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center; }
+
+.cart-mobile {
+  display: none; }
 
 .caja-user {
   width: 80%;
@@ -483,7 +508,11 @@ footer {
   .caja-user {
     width: 80%;
     padding: 20px;
-    margin-bottom: 20%; } }
+    margin-bottom: 50%; }
+  .juegos-cart-desktop {
+    display: none !important; }
+  .cart-mobile {
+    display: inline; } }
 
 @media (max-width: 576px) {
   nav .btn-sesion-mobile {
@@ -496,6 +525,8 @@ footer {
     width: 4.5rem; }
   nav .contenedorNav div {
     padding: 0; }
+  .container-redes__redes a img {
+    width: 7rem; }
   .decorate-titulos::before {
     flex: 60px; }
   .imgSize {
@@ -505,3 +536,17 @@ footer {
     right: 27%; }
   .caja-user {
     width: 90%; } }
+
+@media (max-width: 380px) {
+  .imgLogo-mobile {
+    width: 2.5rem; }
+  .decorate-titulos::after {
+    display: none; }
+  .decorate-titulos::before {
+    display: none; }
+  .titulos {
+    display: inline-block;
+    font-size: 1.8rem; }
+  .btn-publi {
+    right: 20%;
+    width: 219px; } }
