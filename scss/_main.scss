@@ -37,7 +37,7 @@ body{
     font-size: 1rem;
     color: white;
     .text-precio{
-        background-color: #292929;
+        background-color: $color-negro-base;
         padding:  6px 6px 6px 6px;
     }
 }
@@ -51,7 +51,7 @@ body{
     height: 100%;
 }
 .fondo-container-local{
-    background-color: #292929;
+    background-color: $color-negro-base;
     border-radius: 15px;
     left: 50%;
     bottom: 20%;
@@ -168,7 +168,7 @@ body{
 }
 .juegos-cart{
     color: white;
-    background-color: #292929;
+    background-color: $color-negro-base;
     padding: 10px;
 }
 .items-juegos-cart-uno{
@@ -192,14 +192,14 @@ body{
 }
 
 .cart-mobile{
-    background-color: #292929;
+    background-color: $color-negro-base;
     color: white;
     font-weight: bold;
     .img-thumbnail{
         height: 180px;
         width: auto;
-        background-color: #292929;
-        border: #292929;
+        background-color: $color-negro-base;
+        border: $color-negro-base;
     }
     p{
         display: flex;
